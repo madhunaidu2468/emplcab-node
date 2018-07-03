@@ -6,11 +6,11 @@ var cab=require('../dao/cab');
 
 client.on('connect', function () {
   client.subscribe('emplcablocation');
-  client.publish('emplcablocation', 'mqtt connected');
+  client.publish('emplcablocation', '{\"cabId\":1}');
 })
 
 client.on('message', function (topic, message) {
-  console.log('mqtt topic', topic);
+  console.log('topic', topic);
   console.log('message', message.toString());
  // client.end()
     cab.updateLocation(message);
