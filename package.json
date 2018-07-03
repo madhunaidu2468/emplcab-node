@@ -1,0 +1,30 @@
+{
+  "name": "emplcab",
+  "version": "0.0.1",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "dependencies": {
+    "body-parser": "1.8",
+    "diskdb": "^0.1.17",
+    "errorhandler": "*",
+    "express": "4.8.*",
+    "express-myconnection": "^1.0.4",
+    "express-session": "*",
+    "express-validator": "^3.2.0",
+    "express-ws": "^3.0.0",
+    "method-override": "*",
+    "mqtt": "^2.18.1",
+    "object-mapper": "^4.2.0",
+    "swagger-ui-express": "^3.0.10"
+  },
+  "engines": {
+    "node": "4.4.5"
+  }
+}
